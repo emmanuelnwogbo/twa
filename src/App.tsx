@@ -3,6 +3,8 @@ import { TonConnectButton } from '@tonconnect/ui-react';
 import { useTonConnect } from './hooks/useTonConnect';
 import { useHelloWorldContract } from './hooks/useHelloWorldContract';
 
+import '@twa-dev/sdk';
+
 function App() {
   const { connected } = useTonConnect();
   const { value, address, sendIncrement } = useHelloWorldContract();
